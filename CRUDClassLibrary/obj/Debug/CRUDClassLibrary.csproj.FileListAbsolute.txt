@@ -1,0 +1,7 @@
+C:\Users\Xiphias\source\repos\CRUDOperationWithDLL\CRUDClassLibrary\bin\Debug\CRUDClassLibrary.dll
+C:\Users\Xiphias\source\repos\CRUDOperationWithDLL\CRUDClassLibrary\bin\Debug\CRUDClassLibrary.pdb
+C:\Users\Xiphias\source\repos\CRUDOperationWithDLL\CRUDClassLibrary\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Xiphias\source\repos\CRUDOperationWithDLL\CRUDClassLibrary\obj\Debug\CRUDClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Xiphias\source\repos\CRUDOperationWithDLL\CRUDClassLibrary\obj\Debug\CRUDClassLibrary.csproj.CopyComplete
+C:\Users\Xiphias\source\repos\CRUDOperationWithDLL\CRUDClassLibrary\obj\Debug\CRUDClassLibrary.dll
+C:\Users\Xiphias\source\repos\CRUDOperationWithDLL\CRUDClassLibrary\obj\Debug\CRUDClassLibrary.pdb

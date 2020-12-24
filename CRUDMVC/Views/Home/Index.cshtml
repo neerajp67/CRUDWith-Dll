@@ -1,0 +1,50 @@
+﻿@model List<CRUDClassLibrary.Model.StudentModel>
+    @{
+        ViewBag.Title = "Home Page";
+    }
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+        table tr:nth-child(odd) {
+            background-color: aqua;
+            color: black;
+        }
+
+        table tr:nth-child(even) {
+            background-color: lightgray;
+        }
+</style>
+    <div class="jumbotron">
+
+        <p class="lead">ASP.NET MVC CRUD Operation Application Using Class Library..</p>
+
+    </div>
+
+    <table style="font-family:Arial; font-size:medium; color:darkblue">
+        <tr>
+            <th>
+                Student Id
+            </th>
+            <th>
+              Student Name
+            </th>
+          
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentName)
+                </td>
+              
+            </tr>
+        }
+    </table>

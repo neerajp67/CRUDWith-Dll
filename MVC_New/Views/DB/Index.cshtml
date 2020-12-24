@@ -1,0 +1,88 @@
+﻿
+
+@model List<CRUDClassLibrary.Model.StudentModel>
+
+@{
+    ViewBag.Title = "DBMVC";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+
+
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+
+                table tr:nth-child(odd) {
+                    background-color: aqua;
+                    color: black;
+                }
+
+                table tr:nth-child(even) {
+                    background-color: lightgray;
+                }
+        </style>
+        <div class="jumbotron">
+
+            <p class="lead">ASP.NET MVC CRUD Operation Application Using Class Library..</p>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 mb-4">
+                    <table style="font-family:Arial; font-size:medium; color:darkblue">
+                        <tr>
+                            <th>
+                                Student Id
+                            </th>              
+
+                            <th>
+                                Student Name
+                            </th>
+
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StudentID)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.StudentName)
+                                </td>
+
+                            </tr>
+                        }
+                    </table>
+
+                </div>
+                <div class="col-4 mt-2 mb-2">
+                    <div>
+                        @Html.ActionLink("Insert New Student's Data", "Create")
+                    </div>
+                    <div>
+                        @Html.ActionLink("Delete Student's Data", "Delete")
+                    </div>
+                    <div>
+                        @Html.ActionLink("Update Student's Data", "Update")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
